@@ -1,0 +1,96 @@
+.featured-tours-section {
+  padding: 20px 0 30px;
+}
+
+.featured-tours-container {
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+  display: grid;
+  justify-items: center;
+}
+
+.tours-heading {
+  width: 220px;
+  margin: auto;
+}
+
+.tours-cards-container {
+  display: grid;
+  justify-items: center;
+}
+
+/* 
+tours card section */
+
+.tour-card {
+  width: 90%;
+  max-width: 300px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.1s ease-in;
+}
+
+.tour-card:hover {
+  box-shadow: 5px 5px 10px #afafaf;
+  transform: scale(1.025);
+}
+
+.top-section {
+  position: relative;
+}
+
+.date {
+  background-color: #3fd0d4;
+  width: 100px;
+  position: absolute;
+  border-radius: 5px 0 0 0;
+}
+
+.image img {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.bottom-section {
+  padding: 7.5px 15px 15px;
+  background-color: #ececec;
+  border-radius: 0 0 5px 5px;
+}
+
+.tour-title {
+  padding-bottom: 2px;
+  letter-spacing: 0.1rem;
+}
+
+.info-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.country {
+  color: #3fd0d4;
+  align-self: center;
+}
+
+.country i {
+  margin-right: 3px;
+}
+
+.price-and-duration {
+  justify-self: flex-end;
+  color: #afafaf;
+}
+
+@media (min-width: 740px) and (max-width: 899px) {
+  .tours-cards-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 900px) {
+  .tours-cards-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
